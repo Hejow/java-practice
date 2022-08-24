@@ -46,6 +46,6 @@ class Child extends Parent {
 public class Super {
     public static void main(String[] args) {
         Child child = new Child("문희조", 26, "male");
-        System.out.println(child.);
+        System.out.println("name : " + child.name + ", age : " + child.age + ", sex : " + child.sex);
     }
 }
