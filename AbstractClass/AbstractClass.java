@@ -9,11 +9,14 @@ class Dog extends Aniaml {
     void cry() { System.out.println("Woof!"); }
 }
 
-class Cat extends Aniaml { }
+class Cat extends Aniaml {
+    @Override
+    void cry() { System.out.println("Meow!"); }
+}
 
 public class AbstractClass {
     public static void main(String[] args) {
-        new Dog().cry(); // Woof!
-        new Cat().cry(); // Error occur!!
+        new Dog().cry();
+        new Cat().cry();
     }
 }
