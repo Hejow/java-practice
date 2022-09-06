@@ -24,6 +24,6 @@ public class FinalKeyword {
         Hejow.display();
 
         Person HongGilDong = new Person("홍길동", 100);
-        Hejow = HongGilDong; // An Error Occur!
+//        Hejow = HongGilDong; // An Error Occur!
     }
 }
