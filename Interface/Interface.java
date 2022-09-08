@@ -2,6 +2,13 @@ package Interface;
 
 interface Part {
     String putTogether();
+
+    static void Hello() {
+        System.out.println("Hello World!");
+    }
+    default void Hi() {
+        System.out.println("Hi world!");
+    }
 }
 
 class Engine implements Part {
@@ -21,5 +28,6 @@ public class Interface {
         Mechanic mechanic = new Mechanic();
         Engine engine = new Engine();
         mechanic.action(engine); // Engine을 조립했다!!
+        engine.Hi();
     }
 }
