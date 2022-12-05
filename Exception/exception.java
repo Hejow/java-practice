@@ -61,5 +61,8 @@ public class exception {
 //            System.out.println("main에서 예외가 처리되었다..!!");
 //            System.out.println(e);
 //        }
+        double a = 12.4;
+        int b = 4;
+        System.out.println(a%b);
     }
 }
