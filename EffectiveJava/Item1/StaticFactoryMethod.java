@@ -19,6 +19,7 @@ package EffectiveJava.Item1;
 
 // 정적 팩토리 메서드
 class Pokemon {
+    private static Pokemon pokemon;
     private int attack, defense, hp;
 
     private Pokemon(int attack, int defense, int hp) {
@@ -28,7 +29,10 @@ class Pokemon {
     }
 
     public static Pokemon newPokemon() {
-        return new Pokemon(10, 10, 10);
+        if (pokemon == null) {
+            pokemon = new Pokemon(5, 5, 5);
+        }
+        return pokemon;
     }
 }
 
