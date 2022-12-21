@@ -36,7 +36,7 @@ class Pokemon {
         private final int attack, defense, hp;
 
         // 선택 매개변수 - 기본값으로 초기화
-        private int speed = 0;
+        private int speed = 5;
 
         public Builder(int attack, int defense, int hp) {
             this.attack = attack;
@@ -64,8 +64,7 @@ class Pokemon {
 
 public class BuilderPattern {
     public static void main(String[] ars) {
-        Pokemon 피카츄 = new Pokemon.Builder(5, 5, 5)
-                .speed(5)
-                .build();
+        Pokemon 피카츄 = new Pokemon.Builder(5, 5, 5).build();
+        Pokemon 꼬부기 = new Pokemon.Builder(5, 5, 5).speed(0).build();
     }
 }
