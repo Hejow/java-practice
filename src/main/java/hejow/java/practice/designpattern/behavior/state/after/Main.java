@@ -1,8 +1,8 @@
 package hejow.java.practice.designpattern.behavior.state.after;
 
-import Design_Patterns.Behavior.State_Pattern.after.status.Delivered;
-import Design_Patterns.Behavior.State_Pattern.after.status.Payed;
-import Design_Patterns.Behavior.State_Pattern.after.status.Status;
+import hejow.java.practice.designpattern.behavior.state.after.status.Delivered;
+import hejow.java.practice.designpattern.behavior.state.after.status.Payed;
+import hejow.java.practice.designpattern.behavior.state.after.status.Status;
 
 public class Main {
     public static void main(String[] args) {

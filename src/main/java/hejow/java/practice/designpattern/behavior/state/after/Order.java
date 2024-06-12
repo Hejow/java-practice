@@ -1,7 +1,7 @@
 package hejow.java.practice.designpattern.behavior.state.after;
 
-import Design_Patterns.Behavior.State_Pattern.after.status.Ordered;
-import Design_Patterns.Behavior.State_Pattern.after.status.Status;
+import hejow.java.practice.designpattern.behavior.state.after.status.Ordered;
+import hejow.java.practice.designpattern.behavior.state.after.status.Status;
 
 public class Order {
     private String menu;
