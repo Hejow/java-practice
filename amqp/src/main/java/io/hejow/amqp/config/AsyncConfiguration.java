@@ -1,4 +1,4 @@
-package io.hejow.amqp.async;
+package io.hejow.amqp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

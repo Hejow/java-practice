@@ -1,13 +1,13 @@
-package io.hejow.amqp.message;
+package io.hejow.amqp.demo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
-import static io.hejow.amqp.message.RabbitMqConfiguration.DIRECT_QUEUE;
-import static io.hejow.amqp.message.RabbitMqConfiguration.FANOUT_QUEUE;
-import static io.hejow.amqp.message.RabbitMqConfiguration.FANOUT_QUEUE2;
+import static io.hejow.amqp.config.MessageQueueProperties.DIRECT_QUEUE;
+import static io.hejow.amqp.config.MessageQueueProperties.FANOUT_QUEUE;
+import static io.hejow.amqp.config.MessageQueueProperties.FANOUT_QUEUE2;
 
 @Service
 public class MessageListener {
