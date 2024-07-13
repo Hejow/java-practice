@@ -5,12 +5,15 @@ public class MessageQueueProperties {
   private MessageQueueProperties() {
   }
 
-  public static final String DEAD_MESSAGE_QUEUE = "dead-message-queue";
-  public static final String DEAD_MESSAGE_EXCHANGE = "dead-message-exchange";
-
   public static final String COUPON_KEY = "coupon-key";
   public static final String COUPON_QUEUE = "coupon-queue";
   public static final String COUPON_EXCHANGE = "coupon-exchange";
+
+  public static final String COUPON_DLQ = COUPON_QUEUE + ".dlq";
+  public static final String COUPON_DLX = COUPON_EXCHANGE + ".dlx";
+
+  //  public static final String COUPON_PARKING_LOT = COUPON_QUEUE + ".parking-lot";
+  //  public static final String COUPON_PARKING_EXCHANGE = COUPON_EXCHANGE + ".parking-lot";
 
   public static final String DIRECT_KEY = "direct-key";
   public static final String DIRECT_QUEUE = "direct-queue";
