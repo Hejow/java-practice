@@ -49,7 +49,7 @@ public class RabbitMqConfiguration {
   public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(CachingConnectionFactory cachingConnectionFactory) {
     var containerFactory = new SimpleRabbitListenerContainerFactory();
     containerFactory.setConnectionFactory(cachingConnectionFactory);
-//    containerFactory.setDefaultRequeueRejected(false);
+    containerFactory.setDefaultRequeueRejected(false);
     containerFactory.setMessageConverter(jackson2JsonMessageConverter());
 //    containerFactory.setErrorHandler(t -> log.info(t.getCause().toString()));
     containerFactory.setErrorHandler(new ConditionalRejectingErrorHandler(new CustomExceptionStrategy()));
