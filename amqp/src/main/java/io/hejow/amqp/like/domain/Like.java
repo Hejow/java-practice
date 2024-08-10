@@ -1,10 +1,6 @@
 package io.hejow.amqp.like.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 
 @Entity
@@ -37,5 +33,9 @@ public class Like {
 
   public int getCount() {
     return count;
+  }
+
+  public void reset() {
+    this.count = 0;
   }
 }
